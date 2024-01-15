@@ -1,0 +1,225 @@
+/* Typography */
+@font-face {
+  font-family: "Century Gothic";
+  src: url(./fonts/CenturyGothic.ttf);
+}
+@font-face {
+  font-family: "Bebas";
+  src: url(./fonts/Bebas.ttf);
+}
+@font-face {
+  font-family: "Netron";
+  src: url(./fonts/Netron.ttf);
+}
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.screen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+}
+
+.partition-1 {
+  width: 1200px;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.partition-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.weather-div {
+  position: absolute;
+  transform: translate(114%, -225%);
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+
+  width: 520px;
+  height: 160px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 10px;
+}
+
+.weather-div .temp {
+  color: #ffbb31;
+  font-family: Kiona;
+  font-size: 59.744px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.weather-div .weather {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Century Gothic;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.weather-div > img {
+    width: 100px;
+}
+
+.time-div {
+  position: absolute;
+  transform: translate(114%, -110%);
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+
+  width: 520px;
+  height: 80px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.time-div p#time {
+  color: #fff;
+  text-align: right;
+  text-shadow: 0px 7.93px 7.93px rgba(0, 0, 0, 0.25);
+  font-family: Netron;
+  font-size: 47.337px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37.542px; /* 79.307% */
+  letter-spacing: 2.367px;
+}
+
+.date-div {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  color: #ffbf00;
+  text-align: center;
+  font-family: Century Gothic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.15px;
+  text-transform: uppercase;
+}
+
+.partition-2 {
+  width: 80px;
+  height: 100%;
+  background-color: white;
+}
+.partition-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.partition-3 {
+  width: 240px;
+  height: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.partition-3 p {
+  color: #fff;
+  text-align: center;
+  font-family: Century Gothic;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+.partition-3 p:nth-child(3) {
+  text-align: center;
+  font-family: Century Gothic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.partition-3 p:nth-child(4),
+.txt {
+  color: #fff;
+  text-align: right;
+  text-shadow: 0px 6.337px 6.337px rgba(0, 0, 0, 0.25);
+  font-family: Netron;
+  font-size: 37.828px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 79.307% */
+  letter-spacing: 1.891px;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateY(-250px);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateY(-65px);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateY(-28px);
+  }
+
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateY(-8px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+}
+.partition-3 img {
+  width: 172px;
+  height: 153px;
+}
