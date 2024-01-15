@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", getDay);
 
 // Weather API
 const apiKey = "84bedfaec65643489e7114518241501";
-const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Nairobi&aqi=no`;
+const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Nairobi&aqi=no`;
 
 const fetchWeather = async () => {
   const response = await fetch(url);
