@@ -1,3 +1,5 @@
+@import url(./animations.css);
+
 /* Typography */
 @font-face {
   font-family: "Century Gothic";
@@ -43,12 +45,13 @@
 
 .weather-div {
   position: absolute;
-  transform: translate(114%, -225%);
-  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.33);
   text-align: center;
 
-  width: 520px;
-  height: 160px;
+  width: 360px;
+  height: 120px;
 
   display: flex;
   flex-direction: column;
@@ -59,7 +62,7 @@
 .weather-div .temp {
   color: #ffbb31;
   font-family: Kiona;
-  font-size: 59.744px;
+  font-size: 60px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -78,22 +81,23 @@
 }
 
 .weather-div > img {
-    width: 100px;
+  width: 100px;
 }
 
 .time-div {
   position: absolute;
-  transform: translate(114%, -110%);
-  background: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.33);
   text-align: center;
 
-  width: 520px;
+  width: 450px;
   height: 80px;
 
   display: inline-flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  padding: 0 20px;
 }
 
 .time-div p#time {
@@ -112,12 +116,12 @@
   display: flex;
   align-items: flex-end;
   gap: 10px;
-  color: #ffbf00;
+  color: #fff;
   text-align: center;
   font-family: Century Gothic;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
   letter-spacing: 1.15px;
   text-transform: uppercase;
@@ -163,8 +167,7 @@
   text-transform: uppercase;
 }
 
-.partition-3 p:nth-child(4),
-.txt {
+.partition-3 p:nth-child(4) {
   color: #fff;
   text-align: right;
   text-shadow: 0px 6.337px 6.337px rgba(0, 0, 0, 0.25);
@@ -176,50 +179,29 @@
   letter-spacing: 1.891px;
   animation: myAnim 2s ease 0s 1 normal forwards;
 }
-@keyframes myAnim {
-  0% {
-    animation-timing-function: ease-in;
-    opacity: 0;
-    transform: translateY(-250px);
-  }
 
-  38% {
-    animation-timing-function: ease-out;
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  55% {
-    animation-timing-function: ease-in;
-    transform: translateY(-65px);
-  }
-
-  72% {
-    animation-timing-function: ease-out;
-    transform: translateY(0);
-  }
-
-  81% {
-    animation-timing-function: ease-in;
-    transform: translateY(-28px);
-  }
-
-  90% {
-    animation-timing-function: ease-out;
-    transform: translateY(0);
-  }
-
-  95% {
-    animation-timing-function: ease-in;
-    transform: translateY(-8px);
-  }
-
-  100% {
-    animation-timing-function: ease-out;
-    transform: translateY(0);
-  }
-}
 .partition-3 img {
   width: 172px;
   height: 153px;
+}
+
+.cover-image-entrance {
+  -webkit-animation: cover-image-entrance 5s ease-in-out both;
+  animation: cover-image-entrance 5s ease-in-out both;
+}
+
+.bounce-in-top {
+  -webkit-animation: bounce-in-top 2s ease-in-out both;
+  animation: bounce-in-top 2s ease-in-out both;
+}
+
+.slide-in-right {
+  -webkit-animation: slide-in-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-in-left {
+	-webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
