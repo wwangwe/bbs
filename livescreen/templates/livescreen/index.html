@@ -1,0 +1,33 @@
+{% extends "_base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="screen">
+  <div class="partition-1">
+    <img src="{% static '/images/slide_1.png' %}" class="cover-image-entrance" alt="" />
+    <div class="weather-div slide-in-right">
+      <!-- <img src="{{ icon }}" alt="" /> -->
+      <p id="temp" class="temp">{{ temp }}°C</p>
+      <p id="weather" class="weather">{{ condition }}</p>
+    </div>
+    <div class="time-div slide-in-left">
+      <p id="time">{{ time }}</p>
+      <div class="date-div">
+        <p id="day">{{ day }}</p>
+        <p style="opacity: 50%">|</p>
+        <p id="date">{{ date }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="partition-2">
+    <img src="{% static 'images/gold_bar.png' %}" alt="" />
+  </div>
+
+  <div class="partition-3">
+    <img src="{% static 'images/bbs-logo.png' %}" class="bounce-in-top" alt="" />
+    <p id="txt"></p>
+  </div>
+</div>
+{% endblock %}
