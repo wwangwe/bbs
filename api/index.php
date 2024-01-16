@@ -1,10 +1,7 @@
-<!-- create an api -->
 <?php
-
 header('Content-Type: application/json');
 
-if($_SERVER['REQUEST_METHOD'] == 'GET') {
-   //render index.php file
+if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     include "home.php";
 } else {
     $response = [
@@ -14,3 +11,5 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
 
     echo json_encode($response);
 }
+
+?>
