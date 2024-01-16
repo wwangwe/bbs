@@ -50,8 +50,8 @@
   background: rgba(0, 0, 0, 0.33);
   text-align: center;
 
-  width: 360px;
-  height: 120px;
+  width: 320px;
+  height: 160px;
 
   display: flex;
   flex-direction: column;
@@ -61,7 +61,7 @@
 
 .weather-div .temp {
   color: #ffbb31;
-  font-family: Kiona;
+  font-family: Century Gothic;
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
@@ -80,6 +80,18 @@
   text-transform: uppercase;
 }
 
+.weather-div .location {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Century Gothic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
 .weather-div > img {
   width: 100px;
 }
@@ -88,7 +100,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.33);
+  background: rgba(0, 0, 0, 0.5);
   text-align: center;
 
   width: 450px;
