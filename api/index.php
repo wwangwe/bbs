@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-    include "home.php";
+    include "../home.php"; 
 } else {
     $response = [
         'status' => 405,
